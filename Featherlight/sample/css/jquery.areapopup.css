@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/**
+ * jquery.areapopup.js
+ * css setting
+ */
+
+.ap_parent { position: relative; }
+
+.ap_baseLayer {
+  display: none;
+  position: absolute;
+  z-index: 98;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.ap_popup {
+  position: absolute;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+}

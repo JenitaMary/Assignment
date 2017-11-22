@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title></title>
+<style>
+.outer {
+    background-color:blue;
+    width:400px; /* You can define it by % also */
+    height:400px; /* You can define it by % also */
+    position:relative;
+    border:1px solid black;
+    border-radius: 50%;
+}
+.inner {
+    background-color:yellow;
+    top: 25%; left:25%; /* of the container */
+    width:50%; /* of the container */
+    height:50%; /* of the container */
+    position: relative;
+    border:1px solid black;
+    border-radius: 50%;
+}
+.close1{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/jquery.areapopup.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.areapopup.js"></script>
+</head>
+<body>
+<div class="row">
+<div class="col-xs-3 col-md-2">
+<div class="ap_parent">
+    <div class="outer" id="c1" ><!-- <a href="#image" class="popup">A</a> -->
+        <div class="inner" id="c2" style="background-color:green" ><a href="#image" class="popup">A</a>
+            <div class="inner" id="c3" style="background-color:red"><a href="#image1" class="popup">B</a>
+                <div><a href="#image2" class="popup">C</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-xs-3 col-md-2">
+<div class="ap_parent">
+    <div class="outer" id="c1" ><!-- <a href="#image" class="popup">A</a> -->
+        <div class="inner" id="c2" style="background-color:green" ><a href="#image" class="popup">A</a>
+            <div class="inner" id="c3" style="background-color:red"><a href="#image1" class="popup">B</a>
+                <div><a href="#image2" class="popup">C</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    <div id="image" class="ap_popup">
+        <img src="red.jpg" style="width:800px;height:400px;"> 
+        <a href="javascript:void(0)" class="ap_close ">X</a>
+    </div>
+    <div id="image1" class="ap_popup">
+        <img src="green.jpg" style="width:800px;height:400px;"> 
+        <a href="javascript:void(0)" class="ap_close ">X</a>
+    </div>
+    <div id="image2" class="ap_popup">
+         <img src="blue.jpg" style="width:800px;height:400px;"> 
+        <p>dfghj</p> 
+        <a href="ap_parent" class="ap_close">X</a>
+    </div>
+</div>
+</body>
+<script >
+$(".popup").areapopup();
+</script>
+</html>

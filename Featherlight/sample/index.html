@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>jQuery Area Popup Plugin Demo</title>
+<link rel="stylesheet" type="text/css" href="./css/jquery.areapopup.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.areapopup.js"></script>
+<style type="text/css">
+.ap_parent {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fafad2;
+}
+
+.ap_popup {
+  width: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.ap_btn {
+  display: inline-block;
+  padding: 5px;
+  background-color: #ff6347;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+</style>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="ap_parent"> <a href="#ap_popup1" class="ap_btn">item1</a> <a href="#ap_popup2" class="ap_btn">item2</a>
+  <div id="ap_popup1" class="ap_popup">
+    <p>Hi! Area popup!</p>
+    <p><a href="javascript:void(0)" class="ap_close">close</a></p>
+  </div>
+  <div id="ap_popup2" class="ap_popup">
+    <p>ap_popup2 show!</p>
+    <p><a href="javascript:void(0)" class="ap_close">close</a></p>
+  </div>
+  <!-- /.ap_parent --></div>
+<script type="text/javascript">
+	$(".ap_btn").areapopup();
+</script>
+</body>
+</html>
